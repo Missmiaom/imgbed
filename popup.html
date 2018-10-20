@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Figure bed</title>
+        <style>
+            .content{
+                width: 160px;
+                font-size: 12px;
+            }
+            .content a{
+                outline:none;
+                text-decoration: none;
+                color: #333;
+            }
+            .content a:hover{
+                text-decoration: none;
+                color: #000;
+            }
+            .content a:visited{
+                text-decoration: none;
+                color: #000;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                margin-top: 12px;
+                margin-left: 2px;
+            }
+            ul li{
+                padding: 6px;
+                margin-right: 20px;
+                font-size: 12px;
+            }
+            ul li:hover{
+                background-color: #eee;
+            }
+            .settings{
+                padding: 2px;
+                border: 1px solid #fff;
+            }
+            .settings:hover{
+                border: 1px solid #ccc;
+            }
+            .hotkey{
+                display: inline-block;
+                float: right;
+                color: #bbb;
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+        <div>
+            <a href="/options.html" target="_blank"><img class="settings" src="/img/settings.png" width="16" height="16" style="position: fixed;top:4px;right:6px;"></a>
+        </div>
+        <ul>
+            <a id="collect_image" href="#">
+                <li>
+                    <div style="display: inline-block;vertical-align: middle;padding-top: 2px;">
+                        <img style="margin-right: 8px;" src="img/image.png" width="22" height="22" >
+                    </div>
+                    <div style="display: inline-block;vertical-align: middle;">采集图片&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotkey">Alt+1</span></div>
+                </li>
+            </a>
+            <a id="manage_group" href="#">
+                    <li>
+                        <div style="display: inline-block;vertical-align: middle;padding-top: 2px;">
+                            <img style="margin-right: 8px;" src="img/group.png" width="22" height="22" >
+                        </div>
+                        <div style="display: inline-block;vertical-align: middle;">分组管理&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotkey">Alt+2</span></div>
+                    </li>
+                </a>
+            <a id="visit_site" href="#">
+                <li><div style="display: inline-block;vertical-align: middle;padding-top: 2px;">
+                        <img style="margin-right: 8px;" src="img/visit.png"  width="22" height="22" >
+                    </div>
+                    <div style="display: inline-block;vertical-align: middle;">个人主页&nbsp;&nbsp;&nbsp;&nbsp;<span class="hotkey">Alt+3</span></div>
+                </li>
+            </a>
+        </ul>
+        </div>
+        <script src="js/popup.js"></script>
+    </body>
+</html>

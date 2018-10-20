@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+<title>登录 - 极简图床</title>
+<style type="text/css">
+    body{
+        background-color: #e6e6e6;
+    }
+    .content{
+        background-color: #fff;
+        width: 600px;
+        height: 360px;
+        margin:50px auto 20px auto;
+        padding: 10px;
+    }
+    h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    hr{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 1em 0;
+        padding: 0;
+    }
+    label{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .settings{
+        margin:10px auto 10px auto;
+    }
+    .range{
+        width: 300px;
+    }
+    .settings tr{
+        height: 50px;
+    }
+    .settings tr td:first-child{
+        text-align:right;
+    }
+    .report{
+        color: #333;
+        text-decoration: none;
+        color: 333;
+    }
+    .report:hover{
+        text-decoration: underline;
+    }
+    .save-button{
+        width: 64px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+    .save-button:hover{
+        background-color: #eee;
+        cursor:pointer;
+    }
+    .notify{
+        background-color: #f2dede;
+        color: #a94442;
+        text-align: center;
+        width: 216px;
+        height: 20px;
+        padding: 9px 6px 5px 5px;
+        border-radius: 3px;
+        margin:0px 0px 0px 210px;
+        display: none;
+    }
+    .form-group{
+        width: 220px;
+        height: 24px;
+        padding: 2px 4px;
+        font-size: 12px;
+    }
+    .forgot-password{
+        float: right;
+        font-size: 12px !important;
+        line-height: 32px;
+    }
+    .register{
+        float: right;
+    }
+    .link{
+        text-decoration: none;
+        color: #666;
+        font-size: 14px;
+    }
+    a:hover{
+        text-decoration:underline;
+        color: #333;
+    }
+    .header{
+        padding: 6px 14px;
+    }
+</style>
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <a href="options.html" class="link">返回设置</a>
+</div>
+<div class="content">
+    <h2><img src="img/icon-48.png" style="margin: -6px 10px;width:32px">七牛云授权设置 — Figure Bed</h2>
+    <hr>
+    <form id="save-form">
+    <table class="settings">
+        <tr>
+            <td><label for="ak" class="title">AK</label></td>
+            <td><input type="ak" class="form-group" required id="ak" ></td>
+        </tr>
+        <tr>
+            <td><label for="sk" class="title">SK</label></td>
+            <td><input type="sk" class="form-group" required name="sk" id="sk"></td>
+        </tr>
+        <tr>
+            <td><label for="bucket" class="title">Bucket</label></td>
+            <td><input type="bucket" class="form-group" required name="bucket" id="bucket"></td>
+        </tr>
+        <tr>
+            <td><label for="domain" class="title">域名</label></td>
+            <td><input type="domain" class="form-group" required name="domain" id="domain"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" class="save-button" id="save-button" value="保存"></td>
+        </tr>
+    </table>
+    </form>
+</div>
+<script src="js/qiniu-cloud-setting.js"></script>
+</div>
+</body>
+</html>
